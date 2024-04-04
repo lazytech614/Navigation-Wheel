@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: azure;
+    overflow: hidden;
+}
+
+.circle{
+    position: absolute;
+    left: -50vh;
+    top: 50%;
+    transform: translate(0, -50%) rotate(100deg);
+    height: 100vh;
+    width: 100vh;
+    border-radius: 50%;
+    /* background-color: #dadada; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #dadada;
+}
+
+/* .dot{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: black;
+} */
+
+.stripe{
+    height: 40px;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    /* background-color: rgb(74, 74, 74) */
+}
+
+#two{
+    transform: rotate(-10deg);
+    transform-origin: 0 50%;
+}
+
+#three{
+    transform: rotate(-20deg);
+    transform-origin: 0 50%;
+}
+
+#four{
+    transform: rotate(10deg);
+    transform-origin: 0 50%;
+}
+
+#five{
+    transform: rotate(20deg);
+    transform-origin: 0 50%;
+}
+
+.first{
+    position: absolute;
+    height: 100%;
+    width: 50vh;
+    /* background-color: aqua; */
+}
+
+.second{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 30vh;
+    padding-left: 20px;
+    opacity: 0.2;
+    /* background-color: rgb(74, 74, 74) */
+}
+
+.second h4{
+    font-size: 2vw;
+}
+
+.second h6{
+    font-size: 1vw;
+    opacity: 0.7;
+}
+
+.small-circle{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.409);
+    position: absolute;
+    top: 50%;
+    right: -0.8%;
+    z-index: 100;
+}
+
+.panel{
+    height: 80%;
+    width: 3%;
+    /* background-color: #dadada; */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.mini-circle{
+    height: 1vw;
+    width: 1vw;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    opacity: 0.1;
+}
